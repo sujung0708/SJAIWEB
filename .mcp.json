@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "git": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@cyanheads/git-mcp-server@latest"],
+      "env": {
+        "GIT_USERNAME": "sujung0708",
+        "GIT_EMAIL": "sujeonghan030@gmail.com",
+        "GITHUB_TOKEN": "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"
+      }
+    }
+  }
+}
