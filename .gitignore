@@ -2,3 +2,4 @@ logs/
 nul
 node_modules/
 .env
+.mcp.json
