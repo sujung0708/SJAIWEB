@@ -1,0 +1,96 @@
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── 텍스트 그라데이션 ── */
+.gradient-text {
+  background: linear-gradient(135deg, #8B5CF6 0%, #D946A8 50%, #E8447A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── 배경 그라데이션 shift 애니메이션 (9초) ── */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated {
+  background: linear-gradient(
+    135deg,
+    #3B5BDB,
+    #8B5CF6,
+    #D946A8,
+    #E8447A,
+    #D6E4F0,
+    #FFCABA
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 9s ease infinite;
+}
+
+/* ── 텍스트 슬라이드 등장 애니메이션 ── */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down-1 {
+  animation: slideDown 0.6s ease both;
+  animation-delay: 0.0s;
+}
+
+.slide-down-2 {
+  animation: slideDown 0.6s ease both;
+  animation-delay: 0.2s;
+}
+
+.slide-down-3 {
+  animation: slideDown 0.6s ease both;
+  animation-delay: 0.4s;
+}
+
+/* ── 스크롤 인디케이터 바운스 ── */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+
+.scroll-bounce {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* ── 스크롤 트리거 등장 ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
