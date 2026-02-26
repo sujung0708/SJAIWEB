@@ -8,10 +8,7 @@ import SkillTag from '../ui/skill-tag';
 import useScrollTrigger from '../../hooks/use-scroll-trigger';
 
 /** ── 데이터 ── */
-const AWARDS = [
-  { title: '이기자 대회 웹 부문 우수상', date: '2025', org: '이기자협회' },
-  { title: 'UI/UX 디자인 공모전 장려상', date: '2024', org: '한국디자인진흥원' },
-];
+const AWARDS = [];
 
 const CAREERS = [
   {
