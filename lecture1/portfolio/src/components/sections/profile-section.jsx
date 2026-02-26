@@ -49,7 +49,7 @@ function ProfileSection() {
   const careerTrigger = useScrollTrigger();
   const skillTrigger = useScrollTrigger();
 
-  const profileSrc = document.getElementById('profile-photo')?.src || '/profile.jpg';
+  const profileSrc = document.getElementById('profile-photo')?.src || '/프로필이미지.jpg';
 
   return (
     <Box
