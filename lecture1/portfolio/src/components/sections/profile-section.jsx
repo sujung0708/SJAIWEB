@@ -8,7 +8,10 @@ import SkillTag from '../ui/skill-tag';
 import useScrollTrigger from '../../hooks/use-scroll-trigger';
 
 /** ── 데이터 ── */
-const AWARDS = [];
+const AWARDS = [
+  { id: 1, title: '', date: '', org: '' },
+  { id: 2, title: '', date: '', org: '' },
+];
 
 const CAREERS = [
   {
@@ -169,7 +172,7 @@ function ProfileSection() {
               </Typography>
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
                 { AWARDS.map((a) => (
-                  <AwardCard key={a.title} title={a.title} date={a.date} org={a.org} />
+                  <AwardCard key={a.id} title={a.title} date={a.date} org={a.org} />
                 )) }
               </Box>
             </Box>
