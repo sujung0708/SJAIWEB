@@ -142,7 +142,7 @@ function ProfileSection() {
                   lineHeight: 1.6,
                 }}
               >
-                노력으로 성장하는 웹 퍼블리셔입니다.
+                노력과 끈기로 성장하는 웹 퍼블리셔입니다.
               </Typography>
             </Box>
           </Box>

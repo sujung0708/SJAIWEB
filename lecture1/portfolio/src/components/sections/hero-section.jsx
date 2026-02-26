@@ -98,7 +98,7 @@ function HeroSection({ onViewProfile }) {
             textShadow: '0 2px 8px rgba(0,0,0,0.2)',
           }}
         >
-          노력으로 성장하는 웹 퍼블리셔
+          노력과 끈기로 성장하는 웹 퍼블리셔
         </Typography>
 
         {/* CTA 버튼 */}
