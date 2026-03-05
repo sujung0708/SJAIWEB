@@ -39,7 +39,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Pretendard", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
       fontWeight: 900,
       letterSpacing: '0.15em',
